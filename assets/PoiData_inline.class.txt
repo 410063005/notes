@@ -1,0 +1,540 @@
+Compiled from "PoiData.java"
+public class com.tencent.map.geolocation.json.PoiData extends java.lang.Object implements com.tencent.map.geolocation.TencentPoi
+  SourceFile: "PoiData.java"
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = class	#2;	//  com/tencent/map/geolocation/json/PoiData
+const #2 = Asciz	com/tencent/map/geolocation/json/PoiData;
+const #3 = class	#4;	//  java/lang/Object
+const #4 = Asciz	java/lang/Object;
+const #5 = class	#6;	//  com/tencent/map/geolocation/TencentPoi
+const #6 = Asciz	com/tencent/map/geolocation/TencentPoi;
+const #7 = Asciz	name;
+const #8 = Asciz	Ljava/lang/String;;
+const #9 = Asciz	addr;
+const #10 = Asciz	catalog;
+const #11 = Asciz	dist;
+const #12 = Asciz	D;
+const #13 = Asciz	uid;
+const #14 = Asciz	latitude;
+const #15 = Asciz	longitude;
+const #16 = Asciz	direction;
+const #17 = Asciz	<init>;
+const #18 = Asciz	(Lcom/tencent/map/geolocation/TencentPoi;)V;
+const #19 = Asciz	Code;
+const #20 = Method	#3.#21;	//  java/lang/Object."<init>":()V
+const #21 = NameAndType	#17:#22;//  "<init>":()V
+const #22 = Asciz	()V;
+const #23 = InterfaceMethod	#5.#24;	//  com/tencent/map/geolocation/TencentPoi.getName:()Ljava/lang/String;
+const #24 = NameAndType	#25:#26;//  getName:()Ljava/lang/String;
+const #25 = Asciz	getName;
+const #26 = Asciz	()Ljava/lang/String;;
+const #27 = Field	#1.#28;	//  com/tencent/map/geolocation/json/PoiData.name:Ljava/lang/String;
+const #28 = NameAndType	#7:#8;//  name:Ljava/lang/String;
+const #29 = InterfaceMethod	#5.#30;	//  com/tencent/map/geolocation/TencentPoi.getAddress:()Ljava/lang/String;
+const #30 = NameAndType	#31:#26;//  getAddress:()Ljava/lang/String;
+const #31 = Asciz	getAddress;
+const #32 = Field	#1.#33;	//  com/tencent/map/geolocation/json/PoiData.addr:Ljava/lang/String;
+const #33 = NameAndType	#9:#8;//  addr:Ljava/lang/String;
+const #34 = InterfaceMethod	#5.#35;	//  com/tencent/map/geolocation/TencentPoi.getCatalog:()Ljava/lang/String;
+const #35 = NameAndType	#36:#26;//  getCatalog:()Ljava/lang/String;
+const #36 = Asciz	getCatalog;
+const #37 = Field	#1.#38;	//  com/tencent/map/geolocation/json/PoiData.catalog:Ljava/lang/String;
+const #38 = NameAndType	#10:#8;//  catalog:Ljava/lang/String;
+const #39 = InterfaceMethod	#5.#40;	//  com/tencent/map/geolocation/TencentPoi.getDistance:()D
+const #40 = NameAndType	#41:#42;//  getDistance:()D
+const #41 = Asciz	getDistance;
+const #42 = Asciz	()D;
+const #43 = Field	#1.#44;	//  com/tencent/map/geolocation/json/PoiData.dist:D
+const #44 = NameAndType	#11:#12;//  dist:D
+const #45 = InterfaceMethod	#5.#46;	//  com/tencent/map/geolocation/TencentPoi.getUid:()Ljava/lang/String;
+const #46 = NameAndType	#47:#26;//  getUid:()Ljava/lang/String;
+const #47 = Asciz	getUid;
+const #48 = Field	#1.#49;	//  com/tencent/map/geolocation/json/PoiData.uid:Ljava/lang/String;
+const #49 = NameAndType	#13:#8;//  uid:Ljava/lang/String;
+const #50 = InterfaceMethod	#5.#51;	//  com/tencent/map/geolocation/TencentPoi.getLatitude:()D
+const #51 = NameAndType	#52:#42;//  getLatitude:()D
+const #52 = Asciz	getLatitude;
+const #53 = Field	#1.#54;	//  com/tencent/map/geolocation/json/PoiData.latitude:D
+const #54 = NameAndType	#14:#12;//  latitude:D
+const #55 = InterfaceMethod	#5.#56;	//  com/tencent/map/geolocation/TencentPoi.getLongitude:()D
+const #56 = NameAndType	#57:#42;//  getLongitude:()D
+const #57 = Asciz	getLongitude;
+const #58 = Field	#1.#59;	//  com/tencent/map/geolocation/json/PoiData.longitude:D
+const #59 = NameAndType	#15:#12;//  longitude:D
+const #60 = InterfaceMethod	#5.#61;	//  com/tencent/map/geolocation/TencentPoi.getDirection:()Ljava/lang/String;
+const #61 = NameAndType	#62:#26;//  getDirection:()Ljava/lang/String;
+const #62 = Asciz	getDirection;
+const #63 = Field	#1.#64;	//  com/tencent/map/geolocation/json/PoiData.direction:Ljava/lang/String;
+const #64 = NameAndType	#16:#8;//  direction:Ljava/lang/String;
+const #65 = Asciz	LineNumberTable;
+const #66 = Asciz	LocalVariableTable;
+const #67 = Asciz	this;
+const #68 = Asciz	Lcom/tencent/map/geolocation/json/PoiData;;
+const #69 = Asciz	from;
+const #70 = Asciz	Lcom/tencent/map/geolocation/TencentPoi;;
+const #71 = Asciz	(Lorg/json/JSONObject;)V;
+const #72 = Asciz	Exceptions;
+const #73 = class	#74;	//  org/json/JSONException
+const #74 = Asciz	org/json/JSONException;
+const #75 = String	#7;	//  name
+const #76 = Method	#77.#79;	//  org/json/JSONObject.getString:(Ljava/lang/String;)Ljava/lang/String;
+const #77 = class	#78;	//  org/json/JSONObject
+const #78 = Asciz	org/json/JSONObject;
+const #79 = NameAndType	#80:#81;//  getString:(Ljava/lang/String;)Ljava/lang/String;
+const #80 = Asciz	getString;
+const #81 = Asciz	(Ljava/lang/String;)Ljava/lang/String;;
+const #82 = String	#9;	//  addr
+const #83 = String	#10;	//  catalog
+const #84 = String	#11;	//  dist
+const #85 = Method	#77.#86;	//  org/json/JSONObject.optDouble:(Ljava/lang/String;)D
+const #86 = NameAndType	#87:#88;//  optDouble:(Ljava/lang/String;)D
+const #87 = Asciz	optDouble;
+const #88 = Asciz	(Ljava/lang/String;)D;
+const #89 = String	#13;	//  uid
+const #90 = String	#14;	//  latitude
+const #91 = String	#15;	//  longitude
+const #92 = Method	#1.#93;	//  com/tencent/map/geolocation/json/PoiData._addr_5_support:(Lorg/json/JSONObject;)V
+const #93 = NameAndType	#94:#71;//  _addr_5_support:(Lorg/json/JSONObject;)V
+const #94 = Asciz	_addr_5_support;
+const #95 = String	#96;	//  TencentJson
+const #96 = Asciz	TencentJson;
+const #97 = String	#98;	//  json error
+const #98 = Asciz	json error;
+const #99 = Method	#100.#102;	//  com/tencent/map/geolocation/util/LogUtil.e:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+const #100 = class	#101;	//  com/tencent/map/geolocation/util/LogUtil
+const #101 = Asciz	com/tencent/map/geolocation/util/LogUtil;
+const #102 = NameAndType	#103:#104;//  e:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+const #103 = Asciz	e;
+const #104 = Asciz	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V;
+const #105 = Asciz	poiJson;
+const #106 = Asciz	Lorg/json/JSONObject;;
+const #107 = Asciz	Lorg/json/JSONException;;
+const #108 = Asciz	StackMapTable;
+const #109 = String	#16;	//  direction
+const #110 = String	#111;	//  
+const #111 = Asciz	;
+const #112 = Method	#77.#113;	//  org/json/JSONObject.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+const #113 = NameAndType	#114:#115;//  optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+const #114 = Asciz	optString;
+const #115 = Asciz	(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;;
+const #116 = Method	#117.#119;	//  java/lang/Double.isNaN:(D)Z
+const #117 = class	#118;	//  java/lang/Double
+const #118 = Asciz	java/lang/Double;
+const #119 = NameAndType	#120:#121;//  isNaN:(D)Z
+const #120 = Asciz	isNaN;
+const #121 = Asciz	(D)Z;
+const #122 = String	#123;	//  pointy
+const #123 = Asciz	pointy;
+const #124 = String	#125;	//  pointx
+const #125 = Asciz	pointx;
+const #126 = Asciz	toString;
+const #127 = class	#128;	//  java/lang/StringBuilder
+const #128 = Asciz	java/lang/StringBuilder;
+const #129 = String	#130;	//  PoiData{
+const #130 = Asciz	PoiData{;
+const #131 = Method	#127.#132;	//  java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+const #132 = NameAndType	#17:#133;//  "<init>":(Ljava/lang/String;)V
+const #133 = Asciz	(Ljava/lang/String;)V;
+const #134 = String	#135;	//  name=
+const #135 = Asciz	name=;
+const #136 = Method	#127.#137;	//  java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #137 = NameAndType	#138:#139;//  append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #138 = Asciz	append;
+const #139 = Asciz	(Ljava/lang/String;)Ljava/lang/StringBuilder;;
+const #140 = String	#141;	//  ,
+const #141 = Asciz	,;
+const #142 = String	#143;	//  addr=
+const #143 = Asciz	addr=;
+const #144 = String	#145;	//  catalog=
+const #145 = Asciz	catalog=;
+const #146 = String	#147;	//  dist=
+const #147 = Asciz	dist=;
+const #148 = Method	#127.#149;	//  java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+const #149 = NameAndType	#138:#150;//  append:(D)Ljava/lang/StringBuilder;
+const #150 = Asciz	(D)Ljava/lang/StringBuilder;;
+const #151 = String	#152;	//  latitude=
+const #152 = Asciz	latitude=;
+const #153 = String	#154;	//  longitude=
+const #154 = Asciz	longitude=;
+const #155 = String	#156;	//  direction=
+const #156 = Asciz	direction=;
+const #157 = String	#158;	//  }
+const #158 = Asciz	};
+const #159 = Method	#127.#160;	//  java/lang/StringBuilder.toString:()Ljava/lang/String;
+const #160 = NameAndType	#126:#26;//  toString:()Ljava/lang/String;
+const #161 = Asciz	sb;
+const #162 = Asciz	Ljava/lang/StringBuilder;;
+const #163 = Asciz	SourceFile;
+const #164 = Asciz	PoiData.java;
+
+{
+public java.lang.String name;
+
+public java.lang.String addr;
+
+public java.lang.String catalog;
+
+public double dist;
+
+public java.lang.String uid;
+
+public double latitude;
+
+public double longitude;
+
+public java.lang.String direction;
+
+public com.tencent.map.geolocation.json.PoiData(com.tencent.map.geolocation.TencentPoi);
+  Code:
+   Stack=3, Locals=2, Args_size=2
+   0:	aload_0
+   1:	invokespecial	#20; //Method java/lang/Object."<init>":()V
+   4:	aload_0
+   5:	aload_1
+   6:	invokeinterface	#23,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getName:()Ljava/lang/String;
+   11:	putfield	#27; //Field name:Ljava/lang/String;
+   14:	aload_0
+   15:	aload_1
+   16:	invokeinterface	#29,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getAddress:()Ljava/lang/String;
+   21:	putfield	#32; //Field addr:Ljava/lang/String;
+   24:	aload_0
+   25:	aload_1
+   26:	invokeinterface	#34,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getCatalog:()Ljava/lang/String;
+   31:	putfield	#37; //Field catalog:Ljava/lang/String;
+   34:	aload_0
+   35:	aload_1
+   36:	invokeinterface	#39,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getDistance:()D
+   41:	putfield	#43; //Field dist:D
+   44:	aload_0
+   45:	aload_1
+   46:	invokeinterface	#45,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getUid:()Ljava/lang/String;
+   51:	putfield	#48; //Field uid:Ljava/lang/String;
+   54:	aload_0
+   55:	aload_1
+   56:	invokeinterface	#50,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getLatitude:()D
+   61:	putfield	#53; //Field latitude:D
+   64:	aload_0
+   65:	aload_1
+   66:	invokeinterface	#55,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getLongitude:()D
+   71:	putfield	#58; //Field longitude:D
+   74:	aload_0
+   75:	aload_1
+   76:	invokeinterface	#60,  1; //InterfaceMethod com/tencent/map/geolocation/TencentPoi.getDirection:()Ljava/lang/String;
+   81:	putfield	#63; //Field direction:Ljava/lang/String;
+   84:	return
+  LineNumberTable: 
+   line 27: 0
+   line 28: 4
+   line 29: 14
+   line 30: 24
+   line 31: 34
+   line 32: 44
+   line 33: 54
+   line 34: 64
+   line 35: 74
+   line 36: 84
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      85      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+   0      85      1    from       Lcom/tencent/map/geolocation/TencentPoi;
+
+
+public com.tencent.map.geolocation.json.PoiData(org.json.JSONObject)   throws org.json.JSONException;
+  Exceptions: 
+   throws org.json.JSONException  Code:
+   Stack=3, Locals=3, Args_size=2
+   0:	aload_0
+   1:	invokespecial	#20; //Method java/lang/Object."<init>":()V
+   4:	aload_0
+   5:	aload_1
+   6:	ldc	#75; //String name
+   8:	invokevirtual	#76; //Method org/json/JSONObject.getString:(Ljava/lang/String;)Ljava/lang/String;
+   11:	putfield	#27; //Field name:Ljava/lang/String;
+   14:	aload_0
+   15:	aload_1
+   16:	ldc	#82; //String addr
+   18:	invokevirtual	#76; //Method org/json/JSONObject.getString:(Ljava/lang/String;)Ljava/lang/String;
+   21:	putfield	#32; //Field addr:Ljava/lang/String;
+   24:	aload_0
+   25:	aload_1
+   26:	ldc	#83; //String catalog
+   28:	invokevirtual	#76; //Method org/json/JSONObject.getString:(Ljava/lang/String;)Ljava/lang/String;
+   31:	putfield	#37; //Field catalog:Ljava/lang/String;
+   34:	aload_0
+   35:	aload_1
+   36:	ldc	#84; //String dist
+   38:	invokevirtual	#85; //Method org/json/JSONObject.optDouble:(Ljava/lang/String;)D
+   41:	putfield	#43; //Field dist:D
+   44:	aload_0
+   45:	aload_1
+   46:	ldc	#89; //String uid
+   48:	invokevirtual	#76; //Method org/json/JSONObject.getString:(Ljava/lang/String;)Ljava/lang/String;
+   51:	putfield	#48; //Field uid:Ljava/lang/String;
+   54:	aload_0
+   55:	aload_1
+   56:	ldc	#90; //String latitude
+   58:	invokevirtual	#85; //Method org/json/JSONObject.optDouble:(Ljava/lang/String;)D
+   61:	putfield	#53; //Field latitude:D
+   64:	aload_0
+   65:	aload_1
+   66:	ldc	#91; //String longitude
+   68:	invokevirtual	#85; //Method org/json/JSONObject.optDouble:(Ljava/lang/String;)D
+   71:	putfield	#58; //Field longitude:D
+   74:	aload_0
+   75:	aload_1
+   76:	invokespecial	#92; //Method _addr_5_support:(Lorg/json/JSONObject;)V
+   79:	goto	93
+   82:	astore_2
+   83:	ldc	#95; //String TencentJson
+   85:	ldc	#97; //String json error
+   87:	aload_2
+   88:	invokestatic	#99; //Method com/tencent/map/geolocation/util/LogUtil.e:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+   91:	aload_2
+   92:	athrow
+   93:	return
+  Exception table:
+   from   to  target type
+     4    79    82   Class org/json/JSONException
+
+  LineNumberTable: 
+   line 38: 0
+   line 44: 4
+   line 45: 14
+   line 46: 24
+   line 47: 34
+   line 48: 44
+   line 49: 54
+   line 50: 64
+   line 52: 74
+   line 53: 79
+   line 54: 83
+   line 55: 91
+   line 57: 93
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      94      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+   0      94      1    poiJson       Lorg/json/JSONObject;
+   83      10      2    e       Lorg/json/JSONException;
+
+  StackMapTable: number_of_entries = 2
+   frame_type = 255 /* full_frame */
+     offset_delta = 82
+     locals = [ class com/tencent/map/geolocation/json/PoiData, class org/json/JSONObject ]
+     stack = [ class org/json/JSONException ]
+   frame_type = 10 /* same */
+
+
+public java.lang.String getName();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#27; //Field name:Ljava/lang/String;
+   4:	areturn
+  LineNumberTable: 
+   line 74: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public java.lang.String getAddress();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#32; //Field addr:Ljava/lang/String;
+   4:	areturn
+  LineNumberTable: 
+   line 79: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public java.lang.String getCatalog();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#37; //Field catalog:Ljava/lang/String;
+   4:	areturn
+  LineNumberTable: 
+   line 84: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public double getDistance();
+  Code:
+   Stack=2, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#43; //Field dist:D
+   4:	dreturn
+  LineNumberTable: 
+   line 89: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public double getLatitude();
+  Code:
+   Stack=2, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#53; //Field latitude:D
+   4:	dreturn
+  LineNumberTable: 
+   line 94: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public double getLongitude();
+  Code:
+   Stack=2, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#58; //Field longitude:D
+   4:	dreturn
+  LineNumberTable: 
+   line 99: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public java.lang.String getUid();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#48; //Field uid:Ljava/lang/String;
+   4:	areturn
+  LineNumberTable: 
+   line 104: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public java.lang.String getDirection();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	getfield	#63; //Field direction:Ljava/lang/String;
+   4:	areturn
+  LineNumberTable: 
+   line 109: 0
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      5      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+
+
+public java.lang.String toString();
+  Code:
+   Stack=3, Locals=2, Args_size=1
+   0:	new	#127; //class java/lang/StringBuilder
+   3:	dup
+   4:	ldc	#129; //String PoiData{
+   6:	invokespecial	#131; //Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+   9:	astore_1
+   10:	aload_1
+   11:	ldc	#134; //String name=
+   13:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   16:	aload_0
+   17:	getfield	#27; //Field name:Ljava/lang/String;
+   20:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   23:	ldc	#140; //String ,
+   25:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   28:	pop
+   29:	aload_1
+   30:	ldc	#142; //String addr=
+   32:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   35:	aload_0
+   36:	getfield	#32; //Field addr:Ljava/lang/String;
+   39:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   42:	ldc	#140; //String ,
+   44:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   47:	pop
+   48:	aload_1
+   49:	ldc	#144; //String catalog=
+   51:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   54:	aload_0
+   55:	getfield	#37; //Field catalog:Ljava/lang/String;
+   58:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   61:	ldc	#140; //String ,
+   63:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   66:	pop
+   67:	aload_1
+   68:	ldc	#146; //String dist=
+   70:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   73:	aload_0
+   74:	getfield	#43; //Field dist:D
+   77:	invokevirtual	#148; //Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+   80:	ldc	#140; //String ,
+   82:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   85:	pop
+   86:	aload_1
+   87:	ldc	#151; //String latitude=
+   89:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   92:	aload_0
+   93:	getfield	#53; //Field latitude:D
+   96:	invokevirtual	#148; //Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+   99:	ldc	#140; //String ,
+   101:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   104:	pop
+   105:	aload_1
+   106:	ldc	#153; //String longitude=
+   108:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   111:	aload_0
+   112:	getfield	#58; //Field longitude:D
+   115:	invokevirtual	#148; //Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+   118:	ldc	#140; //String ,
+   120:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   123:	pop
+   124:	aload_1
+   125:	ldc	#155; //String direction=
+   127:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   130:	aload_0
+   131:	getfield	#63; //Field direction:Ljava/lang/String;
+   134:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   137:	ldc	#140; //String ,
+   139:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   142:	pop
+   143:	aload_1
+   144:	ldc	#157; //String }
+   146:	invokevirtual	#136; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   149:	pop
+   150:	aload_1
+   151:	invokevirtual	#159; //Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+   154:	areturn
+  LineNumberTable: 
+   line 114: 0
+   line 115: 10
+   line 116: 29
+   line 117: 48
+   line 118: 67
+   line 119: 86
+   line 120: 105
+   line 121: 124
+   line 122: 143
+   line 123: 150
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      155      0    this       Lcom/tencent/map/geolocation/json/PoiData;
+   10      145      1    sb       Ljava/lang/StringBuilder;
+
+
+}
+
