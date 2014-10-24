@@ -1,6 +1,7 @@
 [category]: android
 [keywords]: android,view
 [source]: https://developer.android.com/guide/topics/ui/how-android-draws.html
+[date]: 2014-10-22
 
 # How Android Draws Views
 Activity 得到焦点后将请求绘制其布局. Activity 只用提供布局结构的根节点, 而 Android framework 负责整个绘制流程.
