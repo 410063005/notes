@@ -7,3 +7,9 @@
 http://stackoverflow.com/questions/235839/how-do-i-indent-multiple-lines-quickly-in-vi
 
 
+# 以 utf-8 创建文件
+在 _vimrc 文件中加入以下配置
+
+	set fileencoding=utf-8
+	set fileencodings=utf-8
+
