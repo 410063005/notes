@@ -7,6 +7,9 @@
 
 ![02_jvm_specs_01读书笔记](assets/02_jvm_specs_01读书笔记.png)
 
+[java class viewer][Java-Class-Viewer2] 是关于这个工具的详细介绍。写得非常不错。
+> The class file viewer is a good starting point to understand Java. We may use it as a tool to study the new feathers provided by new versions of Java in JVM .class file level.
+
 [Java-Class-Viewer]: http://www.softpedia.com/get/Programming/File-Editors/Java-Class-Viewer.shtml
 [Java-Class-Viewer2]: http://www.codeproject.com/Articles/35915/Java-Class-Viewer
 [freeinternals]: https://code.google.com/p/freeinternals/
