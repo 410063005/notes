@@ -90,6 +90,9 @@
   3. 执行buf中的命令
 5. 关闭连接
 
+
+
+# 知识点
 ## 知识点一
 <TODO 本地socket>
 
@@ -119,6 +122,16 @@ installd 执行安装命令的实现方式比较巧妙：首先定义如下简�
 	    { "linklib",              2, do_linklib },
 	    { "unlinklib",            1, do_unlinklib },
 	};
+
+学习上面这种用法，写了个简单 [demo](../assets/pkg_install/struct_test.c)，demo的运行结果如下：
+
+	PC0 /cygdrive/f/Users/kingcmchen/git/first_c/jni
+	$ ./a.exe  hello 1
+	do_hello arg0=hello arg1=1
+	
+	PC0 /cygdrive/f/Users/kingcmchen/git/first_c/jni
+	$ ./a.exe  haha 2
+	do_haha arg0=haha arg1=2
 
 ---
 # QUESTION
